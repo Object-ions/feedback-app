@@ -36,6 +36,28 @@ To get this project up and running on your local machine, follow these steps:
    npm start
    ```
 
+## Running the Local Version with Mock Database
+
+The online demo does not include a database connection for data persistence. However, the local version you download from this repository includes a mock local server using `json-server` dependency, providing full CRUD functionality to create, read, update, and delete feedback data stored in a mock database (`db.json` located in the root directory).
+
+To run the local version with the mock database:
+
+1. Ensure you have `json-server` installed globally. If not, install it using npm:
+   ```
+   npm install -g json-server
+   ```
+2. Start the `json-server` on port 8000 (or any port of your choice):
+   ```
+   json-server --watch db.json --port 8000
+   ```
+3. In a separate terminal, start the React development server as described in the installation steps.
+4. Alternatively, you can run both servers (localhost:3000 (UI) and localhost:8000 (DB)) using the command:
+   ```
+   npm run dev
+   ```
+
+This setup allows you to interact with the mock database while using the application locally.
+
 ## Technologies Used
 
 - React (17+)
@@ -43,6 +65,7 @@ To get this project up and running on your local machine, follow these steps:
 - Framer Motion for animations
 - React Router for page routing
 - UUID for unique key generation
+- `json-server` for a local mock database
 
 ## Project Structure
 
