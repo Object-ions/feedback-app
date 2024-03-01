@@ -19,6 +19,11 @@
       "id": "4ce9",
       "text": "this is a new review",
       "rating": 7
+    },
+    {
+      "text": "This is a new item for update in json-server",
+      "rating": 10,
+      "id": "ad43"
     }
   ]
 }
